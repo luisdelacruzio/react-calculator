@@ -1,33 +1,84 @@
-.App {
-  text-align: center;
+/**
+  Table of Contents
+
+    - Global
+    - Main App Container
+    - Calculator Screen
+    - Calculator Key Pad
+ */
+
+
+/**
+  Global
+ */
+
+html {
+  font-size: 25px;
+  background-color: oldlace;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+/**
+  Main App Container
+ */
+#app {
   align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+
+/**
+  Calculator
+ */
+
+.calculator {
+  padding: 1.25rem;
+  background-color: darkgrey;
+  border-radius: .9375rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/**
+  Calculator Screen
+ */
+
+.screen {
+  margin-bottom: .5rem;
+}
+.screen input {
+  text-align: right;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: none;
+  padding: .4rem;
+  width: 100%;
+}
+
+
+/**
+  Calculator Key Pad
+ */
+
+.keyPad {
+  border-collapse: collapse;
+}
+
+.keyPad,
+.keyPad button {
+  width: 100%;
+}
+
+.keyPad button {
+  font-size: 1rem;
+  background-color: white;
+  padding: .4rem 1rem;
 }
